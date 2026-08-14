@@ -1,0 +1,101 @@
+<style>
+  .root {
+    flex-direction: column;
+    align-items: center;
+    padding: 24;
+    gap: 14;
+    background-color: rgba(5, 2, 15, 0.94);
+    border-radius: 16;
+    border-color: rgba(0, 255, 100, 0.3);
+    border-width: 2;
+    width: 300;
+  }
+  .title {
+    font-size: 22;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .section {
+    flex-direction: column;
+    gap: 6;
+    width: 260;
+  }
+  .section-label {
+    font-size: 12;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .option-row {
+    flex-direction: row;
+    gap: 8;
+    align-items: center;
+  }
+  .opt-btn {
+    padding: 8;
+    background-color: rgba(0, 255, 100, 0.08);
+    border-radius: 6;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(0, 255, 100, 0.2);
+    border-width: 1;
+    width: 80;
+  }
+  .opt-btn-active {
+    padding: 8;
+    background-color: rgba(0, 255, 100, 0.25);
+    border-radius: 6;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(0, 255, 100, 0.6);
+    border-width: 1;
+    width: 80;
+  }
+  .opt-text {
+    font-size: 12;
+    color: #00ff66;
+  }
+  .btn-back {
+    padding: 10;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8;
+    width: 260;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1;
+  }
+  .back-text {
+    font-size: 14;
+    color: rgba(255, 255, 255, 0.7);
+  }
+</style>
+<Panel class="root">
+  <div class="title">⚙ SETTINGS</div>
+  <div class="section">
+    <div class="section-label">VOLUME</div>
+    <div class="option-row">
+      <div class="opt-btn" id="vol-off">
+        <div class="opt-text">OFF</div>
+      </div>
+      <div class="opt-btn-active" id="vol-low">
+        <div class="opt-text">LOW</div>
+      </div>
+      <div class="opt-btn" id="vol-high">
+        <div class="opt-text">HIGH</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-label">DIFFICULTY</div>
+    <div class="option-row">
+      <div class="opt-btn-active" id="diff-normal">
+        <div class="opt-text">NORMAL</div>
+      </div>
+      <div class="opt-btn" id="diff-hard">
+        <div class="opt-text">HARD</div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-back" id="btn-settings-back">
+    <div class="back-text">← BACK</div>
+  </div>
+</Panel>

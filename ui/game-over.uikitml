@@ -1,0 +1,112 @@
+<style>
+  .root {
+    flex-direction: column;
+    align-items: center;
+    padding: 30;
+    gap: 12;
+    background-color: rgba(5, 2, 15, 0.94);
+    border-radius: 16;
+    border-color: rgba(255, 40, 40, 0.4);
+    border-width: 2;
+    width: 320;
+  }
+  .skull {
+    font-size: 40;
+  }
+  .title {
+    font-size: 28;
+    color: #ff4444;
+    font-weight: bold;
+  }
+  .score-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 4;
+  }
+  .score-label {
+    font-size: 12;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .score-val {
+    font-size: 24;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .stats-row {
+    flex-direction: row;
+    gap: 20;
+    align-items: center;
+  }
+  .stat-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2;
+  }
+  .stat-num {
+    font-size: 18;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .stat-label {
+    font-size: 10;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .wave-reached {
+    font-size: 14;
+    color: rgba(0, 255, 100, 0.7);
+  }
+  .btn {
+    padding: 12;
+    background-color: rgba(0, 255, 100, 0.12);
+    border-radius: 8;
+    width: 260;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(0, 255, 100, 0.25);
+    border-width: 1;
+  }
+  .btn-text {
+    font-size: 16;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .btn-secondary {
+    padding: 10;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8;
+    width: 260;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1;
+  }
+  .btn-sec-text {
+    font-size: 14;
+    color: rgba(255, 255, 255, 0.7);
+  }
+</style>
+<Panel class="root">
+  <div class="skull">💀</div>
+  <div class="title" id="go-title">GAME OVER</div>
+  <div class="score-row">
+    <div class="score-label">FINAL SCORE</div>
+    <div class="score-val" id="go-score">0</div>
+  </div>
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-num" id="go-captured">0</div>
+      <div class="stat-label">CAPTURED</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" id="go-best-combo">0</div>
+      <div class="stat-label">BEST COMBO</div>
+    </div>
+  </div>
+  <div class="wave-reached" id="go-wave">REACHED WAVE 1</div>
+  <div class="btn" id="btn-play-again">
+    <div class="btn-text">▶ HUNT AGAIN</div>
+  </div>
+  <div class="btn-secondary" id="btn-menu">
+    <div class="btn-sec-text">MENU</div>
+  </div>
+</Panel>

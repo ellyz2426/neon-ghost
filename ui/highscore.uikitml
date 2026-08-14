@@ -1,0 +1,92 @@
+<style>
+  .root {
+    flex-direction: column;
+    align-items: center;
+    padding: 24;
+    gap: 10;
+    background-color: rgba(5, 2, 15, 0.94);
+    border-radius: 16;
+    border-color: rgba(255, 200, 0, 0.3);
+    border-width: 2;
+    width: 300;
+  }
+  .title {
+    font-size: 22;
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  .score-row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260;
+    padding: 6;
+    background-color: rgba(255, 200, 0, 0.06);
+    border-radius: 4;
+    align-items: center;
+  }
+  .score-row-gold {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260;
+    padding: 6;
+    background-color: rgba(255, 200, 0, 0.12);
+    border-radius: 4;
+    align-items: center;
+    border-color: rgba(255, 200, 0, 0.3);
+    border-width: 1;
+  }
+  .rank-text {
+    font-size: 14;
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  .hs-score {
+    font-size: 14;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .no-score-text {
+    font-size: 12;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .btn-back {
+    padding: 10;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8;
+    width: 260;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1;
+  }
+  .back-text {
+    font-size: 14;
+    color: rgba(255, 255, 255, 0.7);
+  }
+</style>
+<Panel class="root">
+  <div class="title">🏆 HIGH SCORES</div>
+  <div class="score-row-gold">
+    <div class="rank-text" id="hs-rank-1">1.</div>
+    <div class="hs-score" id="hs-score-1">---</div>
+  </div>
+  <div class="score-row">
+    <div class="rank-text" id="hs-rank-2">2.</div>
+    <div class="hs-score" id="hs-score-2">---</div>
+  </div>
+  <div class="score-row">
+    <div class="rank-text" id="hs-rank-3">3.</div>
+    <div class="hs-score" id="hs-score-3">---</div>
+  </div>
+  <div class="score-row">
+    <div class="rank-text" id="hs-rank-4">4.</div>
+    <div class="hs-score" id="hs-score-4">---</div>
+  </div>
+  <div class="score-row">
+    <div class="rank-text" id="hs-rank-5">5.</div>
+    <div class="hs-score" id="hs-score-5">---</div>
+  </div>
+  <div class="btn-back" id="btn-hs-back">
+    <div class="back-text">← BACK</div>
+  </div>
+</Panel>

@@ -1,0 +1,73 @@
+<style>
+  .root {
+    flex-direction: column;
+    align-items: center;
+    padding: 24;
+    gap: 14;
+    background-color: rgba(5, 2, 15, 0.94);
+    border-radius: 16;
+    border-color: rgba(0, 255, 100, 0.3);
+    border-width: 2;
+    width: 280;
+  }
+  .title {
+    font-size: 24;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .btn {
+    padding: 12;
+    background-color: rgba(0, 255, 100, 0.12);
+    border-radius: 8;
+    width: 240;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(0, 255, 100, 0.25);
+    border-width: 1;
+  }
+  .btn-text {
+    font-size: 16;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .btn-secondary {
+    padding: 10;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8;
+    width: 240;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1;
+  }
+  .btn-sec-text {
+    font-size: 14;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .btn-quit {
+    padding: 10;
+    background-color: rgba(255, 40, 40, 0.1);
+    border-radius: 8;
+    width: 240;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 40, 40, 0.25);
+    border-width: 1;
+  }
+  .quit-text {
+    font-size: 14;
+    color: #ff4444;
+  }
+</style>
+<Panel class="root">
+  <div class="title">⏸ PAUSED</div>
+  <div class="btn" id="btn-resume">
+    <div class="btn-text">▶ RESUME</div>
+  </div>
+  <div class="btn-secondary" id="btn-pause-settings">
+    <div class="btn-sec-text">⚙ SETTINGS</div>
+  </div>
+  <div class="btn-quit" id="btn-quit">
+    <div class="quit-text">✕ QUIT TO MENU</div>
+  </div>
+</Panel>
