@@ -1,0 +1,103 @@
+<style>
+  .root {
+    flex-direction: column;
+    align-items: center;
+    padding: 24;
+    gap: 12;
+    background-color: rgba(5, 2, 15, 0.94);
+    border-radius: 16;
+    border-color: rgba(0, 200, 255, 0.3);
+    border-width: 2;
+    width: 320;
+  }
+  .title {
+    font-size: 22;
+    color: #00ccff;
+    font-weight: bold;
+  }
+  .section-title {
+    font-size: 14;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .control-row {
+    flex-direction: row;
+    gap: 10;
+    width: 280;
+    align-items: center;
+  }
+  .key-badge {
+    padding: 4;
+    background-color: rgba(0, 255, 100, 0.15);
+    border-radius: 4;
+    align-items: center;
+    width: 80;
+    border-color: rgba(0, 255, 100, 0.3);
+    border-width: 1;
+  }
+  .key-text {
+    font-size: 10;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .action-text {
+    font-size: 12;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .divider {
+    width: 280;
+    height: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .btn-back {
+    padding: 10;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8;
+    width: 280;
+    align-items: center;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1;
+  }
+  .back-text {
+    font-size: 14;
+    color: rgba(255, 255, 255, 0.7);
+  }
+</style>
+<Panel class="root">
+  <div class="title">📖 HOW TO PLAY</div>
+  <div class="section-title">🎮 VR CONTROLS</div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">TRIGGER</div></div>
+    <div class="action-text">Fire proton beam</div>
+  </div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">GRIP</div></div>
+    <div class="action-text">EMF pulse (stun ghosts)</div>
+  </div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">POINTER</div></div>
+    <div class="action-text">Aim beam</div>
+  </div>
+  <div class="divider"></div>
+  <div class="section-title">🖱 BROWSER CONTROLS</div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">L-CLICK</div></div>
+    <div class="action-text">Fire proton beam</div>
+  </div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">R-CLICK</div></div>
+    <div class="action-text">EMF pulse</div>
+  </div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">SPACE</div></div>
+    <div class="action-text">EMF pulse (alt)</div>
+  </div>
+  <div class="control-row">
+    <div class="key-badge"><div class="key-text">ESC</div></div>
+    <div class="action-text">Pause</div>
+  </div>
+  <div class="btn-back" id="btn-tutorial-back">
+    <div class="back-text">← BACK</div>
+  </div>
+</Panel>

@@ -1,0 +1,91 @@
+<style>
+  .root {
+    flex-direction: column;
+    padding: 10;
+    gap: 6;
+    background-color: rgba(5, 2, 15, 0.75);
+    border-radius: 10;
+    border-color: rgba(0, 255, 100, 0.2);
+    border-width: 1;
+    width: 380;
+  }
+  .top-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 360;
+  }
+  .wave-label {
+    font-size: 14;
+    color: #00ff66;
+    font-weight: bold;
+  }
+  .score-label {
+    font-size: 18;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .mid-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 360;
+  }
+  .combo-label {
+    font-size: 14;
+    color: #ff66ff;
+    font-weight: bold;
+  }
+  .lives-label {
+    font-size: 14;
+    color: #ff4444;
+  }
+  .ghost-count {
+    font-size: 12;
+    color: rgba(0, 255, 100, 0.7);
+  }
+  .capture-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 6;
+    width: 360;
+  }
+  .capture-label {
+    font-size: 10;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .capture-bar-bg {
+    width: 260;
+    height: 8;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4;
+  }
+  .capture-bar-fill {
+    width: 0;
+    height: 8;
+    background-color: #00ffaa;
+    border-radius: 4;
+  }
+  .emf-label {
+    font-size: 10;
+    color: rgba(255, 200, 0, 0.7);
+  }
+</style>
+<Panel class="root">
+  <div class="top-row">
+    <div class="wave-label" id="wave-label">WAVE 1</div>
+    <div class="score-label" id="score-label">0</div>
+  </div>
+  <div class="mid-row">
+    <div class="combo-label" id="combo-label">COMBO x1</div>
+    <div class="lives-label" id="lives-label">♥♥♥</div>
+    <div class="ghost-count" id="ghost-count">GHOSTS: 0</div>
+  </div>
+  <div class="capture-row">
+    <div class="capture-label">CAPTURE</div>
+    <div class="capture-bar-bg">
+      <div class="capture-bar-fill" id="capture-bar"></div>
+    </div>
+  </div>
+  <div class="emf-label" id="emf-label">EMF: CLEAR</div>
+</Panel>
